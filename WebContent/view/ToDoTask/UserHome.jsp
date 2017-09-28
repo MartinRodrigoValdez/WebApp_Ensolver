@@ -161,9 +161,9 @@ function ShowOnlyDontDone(element){
 							</div>
 							
 							 <div class="form-group">
-   								<form:label class="control-label col-sm-3" path="dueDate">Due date (dd/mm/aa): </form:label>
+   								<form:label class="control-label col-sm-3" path="dueDate">Due date (dd/mm/yy): </form:label>
    								<div class="col-sm-8">
-    								<form:input class="form-control" path="dueDate" id="dueDate" placeholder="Due date of to-do:" required="true"/>
+    								<form:input pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])[- /.](0[1-9]|1[012])[- /.][0-9]{2}"  class="form-control" path="dueDate" id="dueDate" placeholder="Due date of to-do:" required="true"/>
     								<br>
    								</div> 
   							</div>
@@ -246,7 +246,7 @@ function ShowOnlyDontDone(element){
 									 <div class="form-group">
    										<form:label class="control-label col-sm-3" path="dueDate">Due date (dd/mm/aa): </form:label>
    										<div class="col-sm-8">
-    										<form:input class="form-control"  path="dueDate" id="dueDate" placeholder="Due date of to-do:" ng-model="dateOfTask" required="true"/>
+    										<form:input pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])[- /.](0[1-9]|1[012])[- /.][0-9]{2}" class="form-control"  path="dueDate" id="dueDate" placeholder="Due date of to-do:" ng-model="dateOfTask" required="true"/>
     										
     										<br>
    										</div> 
