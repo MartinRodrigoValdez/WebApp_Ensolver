@@ -6,8 +6,6 @@
 <%@ attribute name="messageInContent" fragment="true" %>
 <%@ attribute name="scriptsForShowModalWhenHaveErrors" fragment="true" %>
 
-
-
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
@@ -79,15 +77,12 @@
 		<div class="error">
 			<jsp:invoke fragment="errorInContent"></jsp:invoke>
 		</div>
-		
 		<div class="message">
 			<jsp:invoke fragment="messageInContent"></jsp:invoke>
 		</div>
-
 		<jsp:invoke fragment="content"></jsp:invoke>
 		
-		
-			<c:url value="/j_spring_security_logout" var="logoutUrl" />
+		<%-- 	<c:url value="/j_spring_security_logout" var="logoutUrl" />
 
 	<!-- csrt for log out-->
 	<form action="${logoutUrl}" method="post" id="logoutForm">
@@ -107,7 +102,7 @@
 			Welcome : ${pageContext.request.userPrincipal.name} | <a
 				href="javascript:formSubmit()"> Logout</a>
 		</h2>
-	</c:if>
+	</c:if> --%>
 		
 		
 	</div>

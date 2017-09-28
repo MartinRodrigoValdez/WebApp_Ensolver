@@ -27,7 +27,6 @@ public class UserService {
     private SecurityService securityService;*/
 	
 	public boolean createNewUser(User user) {
-				
 		if(this.existUser(user.getName())){
 			return false;
 		}else{
@@ -42,10 +41,7 @@ public class UserService {
 	}
 
 	public boolean logInUser(User user){
-		
 		user.setPassword(this.generateHash(SALT + user.getPassword()));
-
-		
 		if(userDAO.isAccessData(user)){
 			return true;
 		}else{
@@ -57,12 +53,9 @@ public class UserService {
 	
 
 	public void saveNewUser(User user) {
-		
 		//user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
 		// user.getUserRole().add(new UserRole(user,"ROLE_USER"));
-		
 		//user.setRoles(new HashSet<>(roleRepository.findAll()));
-		
 		user.setPassword(this.generateHash(SALT + user.getPassword()));
 		userDAO.persist(user);
 	}
@@ -87,19 +80,14 @@ public class UserService {
 
 	public User findUserByName(String username) {
 		return userDAO.findByUserName(username);
-		
 	}
 
 	public void update(User user) {
 		userDAO.update(user);
-		
 	}
 
 	public List<ToDoTask> getListTaskOfUsername(String username) {
 		return userDAO.findByUserName(username).getListOfToDoTask();
-		
-		
-		
 	}
 	
 	

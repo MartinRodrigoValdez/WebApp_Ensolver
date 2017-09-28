@@ -7,8 +7,6 @@ pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="mt" tagdir="/WEB-INF/tags" %>
 
-
-
 <mt:base title="Index">
 
 <jsp:attribute name="errorInContent">
@@ -28,8 +26,7 @@ pageEncoding="ISO-8859-1"%>
 	<jsp:attribute name="content">
 		<div class="col-md-9 bot">
 			<h2 class="ratatouille">Welcome to Ensolver to-do Task</h2>
-			  
-			
+
 			  <form:form name='loginForm' action="/WebAppEnsolver/User/LogIn/" modelAttribute="UserToLog" method='POST'>
 						<div class="form-group">
 							<form:label class="control-label col-sm-3" path="name">User name: </form:label>

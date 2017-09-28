@@ -109,11 +109,6 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 	<bean id="toDoTaskDAO" class="dao.ToDoTaskDao" />
 	<bean id="userDAO" class="dao.UserDao" />
 
-
-	
-
-	
-
 	<!-- Services -->
 	<bean id="userService" class="service.UserService" />	
 	<bean id="toDoTaskService" class="service.ToDoTaskService" />	

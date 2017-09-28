@@ -31,10 +31,6 @@ import service.UserService;
 @Controller
 public class SharedController {
 
-
-	
-	
-	
 	@RequestMapping("/")
 	public ModelAndView index(HttpServletRequest request){
 		HttpSession session = request.getSession(false);
@@ -47,11 +43,7 @@ public class SharedController {
 			view.addObject("UserToLog",new User());
 			return view;
 		}
-		
-		
 
-		
-		
 	}
 	
 

@@ -25,21 +25,13 @@ public class ToDoTaskDao implements GenericDao{
 		return toDoTask;
 	}
 	
-	
-	
-	
-	
-
 	public void update(ToDoTask entity) {
-		
 			Session session = sessionFactory.openSession();
 			Transaction tx = session.beginTransaction();
 			session.update(entity);
 			tx.commit();
-
 			session.close();
 		}
-
 
 	@Transactional
 	@Override
@@ -52,8 +44,6 @@ public class ToDoTaskDao implements GenericDao{
 		session.close();
 		
 	}
-	
-	
 	
 
 	@Override

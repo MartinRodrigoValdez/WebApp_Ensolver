@@ -55,11 +55,7 @@ public class UserController {
 			ModelAndView view = new ModelAndView("redirect:/ToDoTask/");
 			session.setAttribute("typeUserLoged", 1);
 			session.setAttribute("userLoged", user.getName());
-			//session.setAttribute("idUser", ((User)result.getContent()).getId());
 			atributos.addFlashAttribute("message", "Welcome");
-				
-			
-			
 			view.addObject("message", "Se ha registrado correctamente");
 			return view;
 		}
@@ -67,20 +63,15 @@ public class UserController {
 	
 	@RequestMapping(path="LogIn", method=RequestMethod.POST)
 	public ModelAndView logIn(@ModelAttribute("UserToLog")User user , HttpServletRequest request,RedirectAttributes atributos){
-
 		ModelAndView view=new ModelAndView();
 		HttpSession session = request.getSession(false);
-		
 		if(userService.logInUser(user)){
 			session.setAttribute("typeUserLoged", 1);
 			session.setAttribute("userLoged", user.getName());
-			//session.setAttribute("idUser", ((User)result.getContent()).getId());
 			atributos.addFlashAttribute("message", "Welcome");
 				view.setViewName("redirect:/ToDoTask/");
-				//view.addObject("user", ((User)result.getContent()));
 				return view;
 		}else{
-			
 			Map<String, String> errors = new HashMap<String, String>();
 			errors.put("ERROR IN CONTENT", "Invalid credencials");
 			atributos.addFlashAttribute("error", errors);
@@ -102,28 +93,21 @@ public class UserController {
 	}
 	
 	
-	//Spring Security see this :
+/*	//Spring Security see this :dont use
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView login(
-			
-			
-			
 		@RequestParam(value = "error", required = false) String error,
 		@RequestParam(value = "logout", required = false) String logout) {
-
 		ModelAndView model = new ModelAndView();
 		if (error != null) {
 			model.addObject("error", "Invalid username and password!");
 		}
-
 		if (logout != null) {
 			model.addObject("msg", "You've been logged out successfully.");
 		}
 		model.setViewName("login");
-
 		return model;
-
-	}
+	}*/
 	
 	
 }

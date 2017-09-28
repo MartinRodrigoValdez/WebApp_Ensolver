@@ -30,9 +30,7 @@ public class UserDao implements GenericDao<User> {
 		query.setParameter("name", username);
 	    User user =   (User) query.getSingleResult();
 		session.close();
-		
 		return user;
-
 	}
 
 	public boolean existUserByName(String name) {
