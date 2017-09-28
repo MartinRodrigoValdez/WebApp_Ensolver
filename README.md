@@ -39,6 +39,16 @@ consideraciones: se considero que una tarea se podia crear como pendiente o real
  al no haber especificaciones lmitantes se tomo la vision mas amplia posible, siendo que restringir posibilidad, siempre es mas facil que generarlas.
  
  
+ Para finalizar, hace falta decir que se utilizo loalDate de java8 para las fechas, y al no ser del todo compatible con las versiones de jpa, y hibenate, se debio restringir el formato de la fecha a dd/mm/aa.
+ 
+ cualquier duda, ponerse en contacto con el autor
+ 
+ 
+ Información de autor:
+ Martín R. Valdez
+ email: martin.r.valdez@hotmail.com
+ 
+ 
 
 
 
