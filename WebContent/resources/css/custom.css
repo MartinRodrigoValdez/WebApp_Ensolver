@@ -1,0 +1,124 @@
+.content{
+	margin-left: 25%;
+	margin-rigth: 25%;
+	margin-top:10%;
+}
+
+.blackContrastStyle{
+	color:white;
+	padding-top: 14.5px;
+padding-bottom: 14.5px;
+}
+
+.rigthStyle{
+	margin-rigth: 0%;
+	float: right;
+}
+.navVarButtonsContrastStyle:hover{
+	color:#d7dbdd;
+	background-color:#5d6d7e;
+	
+}
+
+.navVarButtonsContrastStyle{
+	color:#d7dbdd;
+	background-color:#5d6d7e;
+	
+}
+
+.navOptions > li{
+	display:inline;
+	
+}
+
+
+
+
+
+
+
+.error{
+	width:65%;
+}
+.error > label{
+	width:95%;
+	text-align: center;
+	color:#c0392b;
+}
+
+.message{
+	width:65%;
+}
+.message > label{
+	width:95%;
+	text-align: center;
+	color:#229954;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.toDoList{
+	margin-left: 20%;
+	margin-rigth: 20%;
+	margin-bottom:5%;
+}
+
+.listScroll{
+	padding-left:1%;
+	overflow-y:auto ;
+	min-height: 0px;
+	max-height: 300px;
+}
+
+.blackStyleLink{
+	color:black;
+	
+}
+.blackStyleLink:hover{
+	color:grey;
+	
+}
+
+.blackContrastStyleLink{
+	color:white;
+	background-color:black;
+	margin-top:5%;
+	padding:1%;
+	
+}
+
+.blackContrastStyleLink:hover{
+	color:white;
+	background-color:grey;
+	margin-top:5%;
+	padding:1%;
+	
+}
+
+
+.blackHeaderModalStyle{
+	color:white;
+	background-color:black;
+	
+}
+.doneToDoTask{
+	
+}
+
+.dontDoneToDoTask{
+	background-color:#dadada;
+}
+
+
+
